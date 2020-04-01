@@ -1,17 +1,19 @@
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import HomeScreen from "./src/screens/HomeScreen";
-//import FollowScreen from "./src/screens/FollowScreen";
+import CameraScreen from "./src/screens/CameraScreen";
+import CamScreen from './src/screens/CamScreen'
 
 const MainNavigator = createStackNavigator(
   {
     Home: HomeScreen,
-   // Follow: FollowScreen
+    Camera: CameraScreen,
+    Cam: CamScreen
   },
   {
     initialRouteName: "Home",
     defaultNavigationOptions: {
-      title: "Home",
+      //title: "Home",
       headerTintColor: "white", //Header button colors
       headerStyle: {
         backgroundColor: "lightblue" // header bg color
@@ -24,3 +26,5 @@ const MainNavigator = createStackNavigator(
 );
 
 export default createAppContainer(MainNavigator);
+
+
