@@ -2,13 +2,11 @@ import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import HomeScreen from "./src/screens/HomeScreen";
 import CameraScreen from "./src/screens/CameraScreen";
-import CamScreen from './src/screens/CamScreen'
 
 const MainNavigator = createStackNavigator(
   {
     Home: HomeScreen,
-    Camera: CameraScreen,
-    Cam: CamScreen
+    Camera: CameraScreen
   },
   {
     initialRouteName: "Home",
